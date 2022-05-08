@@ -43,7 +43,7 @@ var dateelement = document.getElementById('currentDay')
 
 var time = moment().format("hh:mm:ss, MMM Do, YYYY");
 
-var time2 = Number(moment().format("HH"));
+var time2 = Number (moment().format("HH"));
 
 
 
@@ -76,7 +76,7 @@ button9am.addEventListener('click', Savenotes9 );
 
 
 
-if(time2 > 09) {
+if((time2 > 09)||(time2 === 00)) {
 
     document.getElementById('9amtext').className = 'col-10 description border past';
 
@@ -85,7 +85,7 @@ else if (time2 === 09)
 {
     document.getElementById('9amtext').className = 'col-10 description border present';
 }
-else
+else if (time2 < 09 )
 {
     document.getElementById('9amtext').className = 'col-10 description border future';
 }
@@ -109,7 +109,7 @@ localStorage.setItem('textinput10',textinput10am.value )
 
 button10am.addEventListener("click", Savenotes10 );
 
-if(time2 > 10) {
+if((time2 > 10)||(time2 === 00)) {
 
     document.getElementById('10amtext').className = 'col-10 description border past';
 
@@ -138,7 +138,7 @@ localStorage.setItem('textinput11',textinput11am.value )
 
 button11am.addEventListener("click", Savenotes11 );
 
-if(time2 > 11) {
+if((time2 > 11)||(time2 === 00)) {
 
     document.getElementById('11amtext').className = 'col-10 description border past';
 
@@ -166,7 +166,7 @@ localStorage.setItem('textinput12',textinput12pm.value )
 
 button12pm.addEventListener("click", Savenotes12 );
 
-if(time2 > 12) {
+if((time2 > 12)||(time2 === 00)) {
 
     document.getElementById('12pmtext').className = 'col-10 description border past';
 
@@ -194,7 +194,7 @@ localStorage.setItem('textinput1',textinput1pm.value )
 
 button1pm.addEventListener("click", Savenotes1 );
 
-if(time2 > 13) {
+if((time2 > 13)||(time2 === 00)) {
 
     document.getElementById('1pmtext').className = 'col-10 description border past';
 
@@ -222,7 +222,7 @@ localStorage.setItem('textinput2',textinput2pm.value )
 
 button2pm.addEventListener("click", Savenotes2 );
 
-if(time2 > 14) {
+if((time2 > 14)||(time2 === 00)) {
 
     document.getElementById('2pmtext').className = 'col-10 description border past';
 
@@ -250,7 +250,7 @@ localStorage.setItem('textinput3',textinput3pm.value )
 
 button3pm.addEventListener("click", Savenotes3 );
 
-if(time2 > 15) {
+if((time2 > 15)||(time2 === 00)) {
 
     document.getElementById('3pmtext').className = 'col-10 description border past';
 
@@ -278,7 +278,7 @@ localStorage.setItem('textinput4',textinput4pm.value )
 
 button4pm.addEventListener("click", Savenotes4 );
 
-if(time2 > 16) {
+if((time2 > 16)||(time2 === 00)) {
 
     document.getElementById('4pmtext').className = 'col-10 description border past';
 
@@ -306,7 +306,7 @@ localStorage.setItem('textinput5',textinput5pm.value )
 
 button5pm.addEventListener("click", Savenotes5 );
 
-if(time2 > 17) {
+if((time2 > 17)||(time2 === 00)) {
 
     document.getElementById('5pmtext').className = 'col-10 description border past';
 
