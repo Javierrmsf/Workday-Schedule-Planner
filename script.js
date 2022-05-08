@@ -37,6 +37,27 @@ var textinput5pm = document.getElementById('5pmtext');
 var button5pm = document.getElementById('5pmbutton');
 var storedinput5pm = localStorage.getItem('textinput5');
 
+/////Moment 
+var dateelement = document.getElementById('currentDay')
+
+
+var time = moment().format("hh:mm:ss, MMM Do, YYYY");
+
+var time2 = moment().format("HH");
+
+
+
+ dateelement.innerHTML = time ;
+
+
+
+
+
+
+
+console.log(time);
+console.log(time2)
+
 /////9AM
 
 
