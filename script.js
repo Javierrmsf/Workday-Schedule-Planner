@@ -37,6 +37,8 @@ var textinput5pm = document.getElementById('5pmtext');
 var button5pm = document.getElementById('5pmbutton');
 var storedinput5pm = localStorage.getItem('textinput5');
 
+/////9AM
+
 
 if (storedinput9am){
     textinput9am.innerHTML = storedinput9am
@@ -55,7 +57,7 @@ button9am.addEventListener('click', Savenotes9 );
 
 
 
-/////////////////////////////////////////////////////////////////////
+///////10AM
 
 
 
@@ -72,4 +74,101 @@ localStorage.setItem('textinput10',textinput10am.value )
 
 button10am.addEventListener("click", Savenotes10 );
 
-////////////////////////////////////////////////////////////////////////
+////////11AM
+
+
+if (storedinput11am){
+    textinput11am.innerHTML = storedinput11am
+}
+
+const Savenotes11 = () => {
+    console.log (textinput11am.value)
+localStorage.setItem('textinput11',textinput11am.value )
+
+}
+
+button11am.addEventListener("click", Savenotes11 );
+
+/////////12PM
+
+if (storedinput12pm){
+    textinput12pm.innerHTML = storedinput12pm
+}
+
+const Savenotes12 = () => {
+    console.log (textinput12pm.value)
+localStorage.setItem('textinput12',textinput12pm.value )
+
+}
+
+button12pm.addEventListener("click", Savenotes12 );
+
+/////////1PM
+
+if (storedinput1pm){
+    textinput1pm.innerHTML = storedinput1pm
+}
+
+const Savenotes1 = () => {
+    console.log (textinput1pm.value)
+localStorage.setItem('textinput1',textinput1pm.value )
+
+}
+
+button1pm.addEventListener("click", Savenotes1 );
+
+/////////2PM
+
+if (storedinput2pm){
+    textinput2pm.innerHTML = storedinput2pm
+}
+
+const Savenotes2 = () => {
+    console.log (textinput2pm.value)
+localStorage.setItem('textinput2',textinput2pm.value )
+
+}
+
+button2pm.addEventListener("click", Savenotes2 );
+
+////////3PM
+
+if (storedinput3pm){
+    textinput3pm.innerHTML = storedinput3pm
+}
+
+const Savenotes3 = () => {
+    console.log (textinput3pm.value)
+localStorage.setItem('textinput3',textinput3pm.value )
+
+}
+
+button3pm.addEventListener("click", Savenotes3 );
+
+//////////4PM
+
+if (storedinput4pm){
+    textinput4pm.innerHTML = storedinput4pm
+}
+
+const Savenotes4 = () => {
+    console.log (textinput4pm.value)
+localStorage.setItem('textinput4',textinput4pm.value )
+
+}
+
+button4pm.addEventListener("click", Savenotes4 );
+
+//////////5PM
+
+if (storedinput5pm){
+    textinput5pm.innerHTML = storedinput5pm
+}
+
+const Savenotes5 = () => {
+    console.log (textinput5pm.value)
+localStorage.setItem('textinput5',textinput5pm.value )
+
+}
+
+button5pm.addEventListener("click", Savenotes5 );
